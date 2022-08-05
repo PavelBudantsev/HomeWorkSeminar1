@@ -57,3 +57,20 @@
 //     Console.WriteLine("Это число нечетное");
 // }
 
+// на вход принимает число (N), а на выходе показывает 
+// все чётные числа от 1 до N.
+Console.Write("Введите число ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int count = 2;
+
+if (number < count)
+{
+    Console.WriteLine ("Это число слишком маленькое, введите другое ");
+}
+
+while (count <= number)
+{
+    Console.Write (count + " ");
+    count = count + 2;
+}
